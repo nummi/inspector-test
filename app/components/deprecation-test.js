@@ -8,7 +8,7 @@ export default Component.extend({
   texts: ["a", "b", "c", "d"],
 
   capitalizedTexts: computed('texts.@each', function() {
-    return this.get('texts').map(function(t) {
+    return this.texts.map(function(t) {
       Ember.Logger.log('testing');
       var a = { first: 'Yehuda' };
       var b = { last: 'Katz' };
