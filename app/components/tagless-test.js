@@ -1,5 +1,10 @@
 import Component from '@ember/component';
+import { computed } from '@ember/object';
 
 export default Component.extend({
-  tagName: ''
+  tagName: '',
+
+  bla: computed('tagName', function () {
+    return this.tagName + 'woooo';
+  })
 });
