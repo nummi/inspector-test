@@ -11,10 +11,6 @@
 
 <hr>
 
-{{decorators-test}}
-
-<hr>
-
 <AngleBracketTest @title="angle brackets, wooo?" />
 
 <hr>
@@ -27,14 +23,18 @@
 
 <hr>
 
-{{#decorators-test}}
-  {{#decorators-test}}
-    {{#decorators-test}}
-      {{#decorators-test}}
-        Nest
-      {{/decorators-test}}
-    {{/decorators-test}}
-  {{/decorators-test}}
-{{/decorators-test}}
+<ClasslessComponentTest />
+
+<hr>
+
+{{#nesting-test}}
+  {{#nesting-test}}
+    {{#nesting-test}}
+      {{#nesting-test}}
+        Nesting
+      {{/nesting-test}}
+    {{/nesting-test}}
+  {{/nesting-test}}
+{{/nesting-test}}
 
 {{outlet}}
